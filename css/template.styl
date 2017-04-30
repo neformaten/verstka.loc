@@ -1,0 +1,536 @@
+@import 'normalize.styl';
+@import 'mixins.styl';
+@import 'slider.styl';
+@import 'typo.styl';
+::-webkit-input-placeholder
+  color #212121
+::-moz-placeholder
+  color #212121
+:-moz-placeholder
+  color #212121
+:-ms-input-placeholder
+  color #212121
+:focus::-webkit-input-placeholder
+  color transparent
+:focus::-moz-placeholder
+  color transparent
+:focus:-moz-placeholder
+  color transparent
+:focus:-ms-input-placeholder
+  color transparent
+a
+  color #1241ce
+  &:hover
+    text-decoration none
+button, input, optgroup, select, textarea
+  font-family fontFam
+  font-size 14px
+  margin 0
+  padding 0
+  outline none
+button,[type="submit"],[type="button"],[type="reset"]
+  cursor pointer
+ul.menu,ul.menu ul,ul.nolist,.slideshow ul,.pagination ul,ul.breadcrumb
+  margin 0
+  padding 0
+  list-style none
+.c-table tr td,.c-table tr th
+  border 1px #ccc solid
+  padding 2px 4px
+.c-table
+  &:after
+    content ''
+    display block
+    width 100%
+    height 1px
+    clear both
+    margin-bottom 17px
+hr
+  margin 0
+  padding 0
+  border none
+  width 100%
+  height 1px
+  background #ccc
+  margin-bottom 18px
+*
+  box-sizing border-box
+*:before,
+*:after
+  box-sizing border-box
+.img-responsive
+  display block
+  max-width 100%
+  height auto
+.img-rounded
+  border-radius 6px
+.img-thumbnail
+  padding 4px
+  line-height 1.42857143
+  background-color #ffffff
+  border 1px solid #dddddd
+  border-radius 4px
+  transition all 0.2s ease-in-out
+  display inline-block
+  max-width 100%
+  height auto
+.circle
+  border-radius 50%
+html
+  height 100%
+body
+  font 14px/21px fontFam, sans-serif
+  color #232323
+  width 100%
+  max-width 100%
+  height 100%
+  position relative
+.clr,.clearfix
+  clear both
+.container
+  margin-right auto
+  margin-left auto
+  padding-left 10px
+  padding-right 10px
+  width 1230px
+.container-fluid
+  margin-right auto
+  margin-left auto
+  padding-left 10px
+  padding-right 10px
+.row
+  margin-left -10px
+  margin-right -10px
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+  position relative
+  min-height 1px
+  padding-left 10px
+  padding-right 10px
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12
+  float left
+.col-lg-12
+  width 100%
+.col-lg-11
+  width 91.66666667%
+.col-lg-10
+  width 83.33333333%
+.col-lg-9
+  width 75%
+.col-lg-8
+  width 66.66666667%
+.col-lg-7
+  width 58.33333333%
+.col-lg-6
+  width 50%
+.col-lg-5
+  width 41.66666667%
+.col-lg-4
+  width 33.33333333%
+.col-lg-3
+  width 25%
+.col-lg-2
+  width 16.66666667%
+.col-lg-1
+  width 8.33333333%
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after
+  content " "
+  display table
+.clearfix:after,
+.container:after,
+.container-fluid:after,
+.row:after
+  clear both
+.hidden
+  display none
+.block
+  width 100%
+  float left
+  margin 0 0 40px 0
+.block:before,
+.block:after
+  content " "
+  display table
+.block:after
+  clear both
+.wrapper
+  width 100%
+  min-height 100%
+  height auto !important
+  height 100%
+  margin 0
+  padding 0
+.header
+  padding 26px 0 30px
+  margin 0
+.mobilemenu
+  display none
+  cursor pointer
+.logo
+  float right
+  text-transform uppercase
+  max-width 300px
+  a
+    display block
+    text-decoration none
+    color #232323
+    img
+      float left
+      margin 0 12px 0 0
+    .logo-title
+      display block
+      float left
+      font-size 30px
+      line-height 38px
+      font-weight bold
+    .logo-subtitle
+      display block
+      float left
+      font-size 14px
+      font-weight 300
+      line-height 24px
+.head-delivery
+  width 210px
+  padding 10px 10px 10px 46px
+  margin 5px 0 0 0
+  font-size 12px
+  line-height 18px
+  font-weight 900
+  text-transform uppercase
+  background #f1f0ea url(../images/delivery.png) no-repeat 10px center
+.head-phone
+  margin 5px 0 0 0
+  font-size 17px
+  line-height 32px
+  font-weight 600
+  text-align right
+  position relative
+  &:after
+    content ''
+    display block
+    width 30px
+    height 30px
+    position absolute
+    left -20px
+    top 2px
+    background url(../images/phone.png) no-repeat left top
+.head-callback-link
+  cursor pointer
+  display inline-block
+  margin 0 0 0 20px
+  font-size 13px
+  line-height 18px
+  font-weight 300
+  color #1241ce
+  border-bottom 1px #1241ce dotted
+.head-cart
+  position relative
+  height 56px
+  border 1px #ededed solid
+  padding 7px 20px 0 67px
+  margin 5px 0 0 0
+  line-height 20px
+  font-weight 300
+  background url(../images/cart.png) no-repeat 15px 8px
+  border-radius 28px
+.head-cart-quantityNum
+  position absolute
+  top 10px
+  left 40px
+  width 23px
+  height 23px
+  line-height 23px
+  text-align center
+  color #fff
+  background #e50019
+  border-radius 50%
+.topmenu
+  height 60px
+  line-height 60px
+  margin 0 0 30px 0
+  background rgb(78, 155, 248)
+  background -moz-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -webkit-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -o-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -ms-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background linear-gradient(90deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  ul
+    display table
+    width 100%
+    text-align center
+    border-collapse collapse
+    li
+      display table-cell
+      border-left 1px #62a1f5 solid
+      border-right  1px #62a1f5 solid
+      position relative
+      a
+        display block
+        padding 0 20px
+        text-decoration none
+        font-size 14px
+        color #fff
+      &.active a,& a:hover
+          background #1241ce
+      ul
+        display none
+        position absolute
+        z-index 999999
+        text-align left
+        background #4e9bf8
+        min-width 255px
+        li
+          display block
+          float none
+          border none
+          line-height 19px
+          a
+            padding 10px 25px
+          &.active a,& a:hover
+            background #3778e8
+      &:hover ul
+        display block
+.slideshow
+  margin 0 0 40px 0
+.mainslider
+  height 500px
+  overflow hidden
+.mainslider-item-img
+  position relative
+  z-index 2
+.mainslider-item-title
+  font-size 44px
+  line-height 48px
+  font-weight 300
+  position absolute
+  z-index 3
+  top 20px
+  left 40px
+  max-width 580px
+.benefits-item
+  width 100%
+  float left
+  border 1px #ededed solid
+  padding 12px 15px
+.benefits-item-img
+  float left
+  margin 6px 0 0 0
+.benefits-item-textWrap
+  margin 0 0 0 65px
+.benefits-item-title
+  font-size 18px
+  line-height 26px
+  font-weight 600
+  text-transform uppercase
+.benefits-item-text
+  font-size 13px
+  line-height 18px
+  font-weight 300
+.products-item
+  padding 20px 10px
+  margin 0 0 30px 0
+  border 1px #ededed solid
+  text-align center
+  &:hover
+    box-shadow 0px 0px 12px 0px rgba(0, 0, 0, 0.12)
+.products-item-img
+  display inline-block
+  height 190px
+.products-item-title
+  display inline-block
+  margin 7px 0
+.products-item-price
+  font-size 18px
+  font-weight 600
+  margin 0 0 10px 0
+.products-item-btn
+  display inline-block
+  color #212121
+  border 1px transparent solid
+  background #f1f0ea
+  padding 8px 25px 10px
+  border-radius 25px
+  transition all ease .5s
+  &:hover
+    border-color #e50019
+    color #e50019
+    background #fff
+.sertificates
+  padding 25px 0 30px
+  background url(../images/sert-bg.jpg) no-repeat center center
+  background-size cover
+  .col-lg-3
+    text-align center
+  .col-lg-3.first
+    text-align left
+  .col-lg-3.last
+    text-align right
+.sertificates-list
+  list-style none
+  margin 0
+  padding 0
+  text-align justify
+  width 100%
+  &:after
+    content ''
+    display inline-block
+    margin-left 100%
+  li
+    display inline-block
+.sertificates-img
+  border 5px rgba(255,255,255, 0.4) solid
+.about-img
+  float right
+.order
+  min-height 357px
+  background url(../images/order-bg.jpg) no-repeat center center
+  background-size cover
+.orderWrap
+  margin 60px 0 0 390px
+  max-width 470px
+.order-text
+  font-size 16px
+  line-height 24px
+  font-weight 300
+  margin 0 0 45px 0
+.order-form-phone
+  background #fff
+  border none
+  font-weight 300
+  font-size 18px
+  line-height 21px
+  padding 16px 30px 17px
+  border-radius 30px
+.order-form-btn
+  margin 0 0 0 15px
+  border none
+  color #fff
+  font-weight 300
+  font-size 18px
+  line-height 21px
+  padding 16px 30px 17px
+  border-radius 30px
+  background rgb(78, 155, 248)
+  background -moz-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -webkit-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -o-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -ms-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background linear-gradient(90deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+.manufacturers-item
+  display table-cell
+  border 1px #ededed solid
+  width 240px
+  height 138px
+  padding 10px
+  text-align center
+  vertical-align middle
+.content
+  padding 0 0 227px
+  margin 0 0 0 0
+.footer
+  margin -227px auto 0
+  height 227px
+  background #f7f7f6
+  border-top 1px #e8e7df solid
+  position relative
+.copy
+  float left
+@media screen and (max-width: 1230px)
+  .container
+    width 990px
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12
+    float left
+  .col-md-12
+    width 100%
+  .col-md-11
+    width 91.66666667%
+  .col-md-10
+    width 83.33333333%
+  .col-md-9
+    width 75%
+  .col-md-8
+    width 66.66666667%
+  .col-md-7
+    width 58.33333333%
+  .col-md-6
+    width 50%
+  .col-md-5
+    width 41.66666667%
+  .col-md-4
+    width 33.33333333%
+  .col-md-3
+    width 25%
+  .col-md-2
+    width 16.66666667%
+  .col-md-1
+    width 8.33333333%
+
+@media screen and (max-width: 990px)
+  .container
+    width 768px
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12
+    float left
+  .col-sm-12
+    width 100%
+  .col-sm-11
+    width 91.66666667%
+  .col-sm-10
+    width 83.33333333%
+  .col-sm-9
+    width 75%
+  .col-sm-8
+    width 66.66666667%
+  .col-sm-7
+    width 58.33333333%
+  .col-sm-6
+    width 50%
+  .col-sm-5
+    width 41.66666667%
+  .col-sm-4
+    width 33.33333333%
+  .col-sm-3
+    width 25%
+  .col-sm-2
+    width 16.66666667%
+  .col-sm-1
+    width 8.33333333%
+@media screen and (max-width: 768px)
+  .container
+    width 600px
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12
+    float left
+  .col-xs-12
+    width 100%
+  .col-xs-11
+    width 91.66666667%
+  .col-xs-10
+    width 83.33333333%
+  .col-xs-9
+    width 75%
+  .col-xs-8
+    width 66.66666667%
+  .col-xs-7
+    width 58.33333333%
+  .col-xs-6
+    width 50%
+  .col-xs-5
+    width 41.66666667%
+  .col-xs-4
+    width 33.33333333%
+  .col-xs-3
+    width 25%
+  .col-xs-2
+    width 16.66666667%
+  .col-xs-1
+    width 8.33333333%
+@media screen and (max-width: 600px)
+  .container
+    width 100%
+  div[class^="col-"]
+    width 100%
